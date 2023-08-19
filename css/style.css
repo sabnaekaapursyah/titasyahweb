@@ -1,0 +1,311 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none; 
+   
+}
+
+:root {
+    --bg-color: rgb(241, 208, 163); 
+    
+}
+
+/* css navbar  */
+nav{
+    display: flex; 
+    background-color: var(--bg-color); 
+    justify-content: space-around;
+    align-items: center; 
+    padding: 8px;
+   
+}
+nav .head{
+    display: flex; 
+    align-items: center; 
+    font-family: monotype corsiva; 
+}
+
+nav .head h3{
+    margin-left: 5px; 
+}
+
+nav .nav-list ul{
+    display: flex; 
+}
+
+nav .nav-list ul li {
+    list-style: none;
+    padding: 0.5rem 1rem;  
+}
+
+nav .nav-list ul li a{
+    color: black; 
+}
+
+nav .nav-list ul li a:hover{
+    color: white; 
+}
+
+
+/* css header */
+
+.hero{
+    display:flex; 
+    justify-content: center; 
+    background-image: url("../img/bg.jpg");
+    background-size: cover; 
+    background-position: center; 
+    height: 89vh; 
+    align-items: center; 
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.hero .hero-head button{
+    border: 3px solid var(--bg-color); 
+    padding: 5px 15px; 
+    background: transparent; 
+    font-weight: 500; 
+    transition: .4s; 
+    cursor: pointer; 
+
+}
+
+.hero .hero-head button a{
+    color: black; 
+}
+
+.hero .hero-head button a:hover{
+   
+    color:white; 
+    
+}
+.hero .hero-head button:hover{
+    background-color: var(--bg-color); 
+}
+
+.hero .hero-head h3{
+    margin: 1rem 0; 
+    font-weight: 400; 
+    font-size: 16px; 
+}
+
+.hero .hero-head h1{
+    font-family:  monotype corsiva; 
+    font-size: 4rem; 
+}
+
+/* css about */
+
+.about{
+    padding: 4rem; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgba(243,236,212, .8);
+}
+
+
+.about .about-head{
+  text-align:center; 
+  margin-bottom: 40px; 
+}
+
+.about .about-head h1 {
+    font-size: 2.5rem;
+}
+
+.about .about-content{
+    display: flex; 
+    justify-content: space-evenly; 
+    align-items: center;
+}
+
+.about .about-content .about-desc{
+    width: 500px;
+    font-size: .9rem;
+}
+
+.about .about-content img{
+    border-radius: 1rem; 
+}
+
+
+/* css Rooms */
+
+.rooms {
+    background-color: rgba(243,236,212, .8);
+    height: 89vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+.rooms .rooms-head{
+    text-align: center; 
+    padding: 2rem 0;
+}
+
+.rooms .image-room-1 {
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../img/bigbed.jpg');
+}
+
+.rooms .image-room-2 {
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../img/smallbed.jpg');
+}
+
+.rooms-content {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.rooms-content .card {
+    background-color: white;
+    border-radius: .4rem;
+    margin: 1.2rem 2.5rem;
+    transform: scale(1);
+    transition: .2s; 
+    cursor: pointer; 
+}
+
+.rooms-content .card:hover{
+    transform: scale(1.1);
+}
+
+.rooms-content .card .card-title {
+    padding: .7rem 1rem;
+}
+
+.rooms-content .card .card-text{
+    padding: 0.3rem 1rem;
+}
+
+.rooms-content .card .price{
+    border-top: 2px solid rgba(243,236,212);
+    padding: 0.3rem;
+}
+
+
+
+/* css fasilitas */
+
+.fasilitas {
+    background-color: rgba(243,236,212, .8);
+    height: 89vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+.fasilitas .fasilitas-head{
+    text-align: center; 
+    padding: 2rem 0;
+}
+
+.fasilitas .image-1 {
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../img/kolamrenang.jpg');
+}
+
+.fasilitas .image-2 {
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../img/rooftop.jpg');
+}
+
+.fasilitas .image-3 {
+    width: 300px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../img/lapanganbasket.jpg');
+}
+
+.fasilitas-content {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.fasilitas-content .card {
+    background-color: white;
+    border-radius: .4rem;
+    margin: 1.2rem 2.5rem;
+    transform: scale(1);
+    transition: .2s; 
+    cursor: pointer; 
+    overflow: hidden; 
+}
+
+.fasilitas-content .card:hover{
+    transform: scale(1.1);
+}
+
+.fasilitas-content .card .card-title {
+    padding: .7rem 1rem;
+}
+
+/* css contact us */
+
+.kontak{
+    display: flex; 
+    justify-content: space-evenly;
+    padding: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.kontak tr td {
+    padding: 5px;
+}
+
+.kontak .pesan p, .kontak .pesan label {
+    margin: 5px 0;
+}
+
+.kontak .pesan button {
+    padding: .2rem 1rem;
+    cursor: pointer;
+}
+
+.social .social-title {
+    margin-top: 2.5rem;
+}
+
+.social .sosial-icon {
+    display: flex;
+}
+
+.social .sosial-icon .icon {
+    margin-right: 1rem;
+    margin-top: 1rem;
+    background-color: #ddd;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: .2rem;
+    transform: scale(1);
+    transition: .2s;
+}
+
+.social .sosial-icon .icon:hover {
+    transform: scale(1.2);
+    background-color: var(--bg-color);
+}
+
